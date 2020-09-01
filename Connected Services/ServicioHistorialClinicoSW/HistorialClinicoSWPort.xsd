@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ns0="http://serviciosWeb/" targetNamespace="http://serviciosWeb/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="agregarHistorial">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="ns0:historialClinico" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="agregarHistorialResponse">
+    <xsd:sequence>
+      <xsd:element name="return" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="buscarHistorial">
+    <xsd:sequence>
+      <xsd:element name="arg0" type="xsd:int" />
+      <xsd:element minOccurs="0" name="arg1" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="buscarHistorialResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="ns0:historialClinico" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="buscarHistorialSolo">
+    <xsd:sequence>
+      <xsd:element name="arg0" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="buscarHistorialSoloResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="ns0:historialClinico" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="eliminarHistorial">
+    <xsd:sequence>
+      <xsd:element name="arg0" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="listarHistorial" />
+  <xsd:complexType name="listarHistorialPorParametro">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="listarHistorialPorParametroResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="return" type="xsd:anyType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="listarHistorialResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="return" type="xsd:anyType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="modificarHistorial">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="ns0:historialClinico" />
+      <xsd:element name="arg1" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="modificarHistorialResponse">
+    <xsd:sequence>
+      <xsd:element name="return" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="historialClinico">
+    <xsd:sequence>
+      <xsd:element name="codigo" type="xsd:int" />
+      <xsd:element name="fk_enfermedad" type="xsd:int" />
+      <xsd:element minOccurs="0" name="fk_paciente" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nombreDoctor" type="xsd:string" />
+      <xsd:element name="numeroHistoria" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="agregarHistorial" type="ns0:agregarHistorial" />
+  <xsd:element name="agregarHistorialResponse" type="ns0:agregarHistorialResponse" />
+  <xsd:element name="buscarHistorial" type="ns0:buscarHistorial" />
+  <xsd:element name="buscarHistorialResponse" type="ns0:buscarHistorialResponse" />
+  <xsd:element name="buscarHistorialSolo" type="ns0:buscarHistorialSolo" />
+  <xsd:element name="buscarHistorialSoloResponse" type="ns0:buscarHistorialSoloResponse" />
+  <xsd:element name="eliminarHistorial" type="ns0:eliminarHistorial" />
+  <xsd:element name="listarHistorial" type="ns0:listarHistorial" />
+  <xsd:element name="listarHistorialPorParametro" type="ns0:listarHistorialPorParametro" />
+  <xsd:element name="listarHistorialPorParametroResponse" type="ns0:listarHistorialPorParametroResponse" />
+  <xsd:element name="listarHistorialResponse" type="ns0:listarHistorialResponse" />
+  <xsd:element name="modificarHistorial" type="ns0:modificarHistorial" />
+  <xsd:element name="modificarHistorialResponse" type="ns0:modificarHistorialResponse" />
+</xsd:schema>

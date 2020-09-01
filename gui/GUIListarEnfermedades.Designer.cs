@@ -1,0 +1,66 @@
+﻿namespace ClienteHospitalSWNet.gui
+{
+    partial class GUIListarEnfermedades
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.grilla = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.grilla)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // grilla
+            // 
+            this.grilla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grilla.Location = new System.Drawing.Point(1, 1);
+            this.grilla.Margin = new System.Windows.Forms.Padding(4);
+            this.grilla.Name = "grilla";
+            this.grilla.RowHeadersWidth = 51;
+            this.grilla.Size = new System.Drawing.Size(594, 336);
+            this.grilla.TabIndex = 7;
+            this.grilla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grilla_CellContentClick);
+            this.grilla.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.grilla_CellMouseClick);
+            // 
+            // GUIListarEnfermedades
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(593, 343);
+            this.Controls.Add(this.grilla);
+            this.Name = "GUIListarEnfermedades";
+            this.Text = "GUIListarEnfermedades";
+            this.Load += new System.EventHandler(this.GUIListarEnfermedades_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.GUIListarEnfermedades_MouseClick);
+            ((System.ComponentModel.ISupportInitialize)(this.grilla)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.DataGridView grilla;
+    }
+}

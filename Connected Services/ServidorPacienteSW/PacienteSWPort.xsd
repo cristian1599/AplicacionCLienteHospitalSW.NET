@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ns0="http://serviciosWeb/" targetNamespace="http://serviciosWeb/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="agregarPaciente">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="ns0:paciente" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="agregarPacienteResponse">
+    <xsd:sequence>
+      <xsd:element name="return" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="buscarPaciente">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="buscarPacienteResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="ns0:paciente" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="eliminarPaciente">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="listar" />
+  <xsd:complexType name="listarPorParametro">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="listarPorParametroResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="return" type="xsd:anyType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="listarResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="return" type="xsd:anyType" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="modificarPaciente">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="arg0" type="ns0:paciente" />
+      <xsd:element minOccurs="0" name="arg1" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="modificarPacienteResponse">
+    <xsd:sequence>
+      <xsd:element name="return" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="paciente">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="correo" type="xsd:string" />
+      <xsd:element minOccurs="0" name="documento" type="xsd:string" />
+      <xsd:element minOccurs="0" name="genero" type="xsd:string" />
+      <xsd:element name="id" type="xsd:int" />
+      <xsd:element minOccurs="0" name="nombre" type="xsd:string" />
+      <xsd:element minOccurs="0" name="telefono" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="agregarPaciente" type="ns0:agregarPaciente" />
+  <xsd:element name="agregarPacienteResponse" type="ns0:agregarPacienteResponse" />
+  <xsd:element name="buscarPaciente" type="ns0:buscarPaciente" />
+  <xsd:element name="buscarPacienteResponse" type="ns0:buscarPacienteResponse" />
+  <xsd:element name="eliminarPaciente" type="ns0:eliminarPaciente" />
+  <xsd:element name="listar" type="ns0:listar" />
+  <xsd:element name="listarPorParametro" type="ns0:listarPorParametro" />
+  <xsd:element name="listarPorParametroResponse" type="ns0:listarPorParametroResponse" />
+  <xsd:element name="listarResponse" type="ns0:listarResponse" />
+  <xsd:element name="modificarPaciente" type="ns0:modificarPaciente" />
+  <xsd:element name="modificarPacienteResponse" type="ns0:modificarPacienteResponse" />
+</xsd:schema>

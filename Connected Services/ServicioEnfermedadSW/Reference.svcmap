@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a47ac09e-53ba-4054-9b1e-805e7c07ba35" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:7101/AplicacionServidorHospitalSW-ProyectoServidorHospitalSW-context-root/ServicioEnfermedadSWPort?WSDL" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioEnfermedadSW.wsdl" MetadataType="Wsdl" ID="6d77ec1a-a83d-4192-b8f9-afb8f616463e" SourceId="1" SourceUrl="http://localhost:7101/AplicacionServidorHospitalSW-ProyectoServidorHospitalSW-context-root/ServicioEnfermedadSWPort?WSDL" />
+    <MetadataFile FileName="ServicioEnfermedadSWPort.xsd" MetadataType="Schema" ID="e7fc37c9-346d-4ee5-991f-51dc35a3d883" SourceId="1" SourceUrl="http://localhost:7101/AplicacionServidorHospitalSW-ProyectoServidorHospitalSW-context-root/ServicioEnfermedadSWPort?xsd=1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
